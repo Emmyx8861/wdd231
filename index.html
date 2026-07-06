@@ -1,61 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="My Homepage linking to the project for Lagos Chamber of Commerce">
     <meta name="author" content="Adewemimo Emmanuel">
-    <title> Lagos Chamber Commerce</title>   
+    <title>WDD 231 Course Home Page - Emmanuel Adewemimo</title>   
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/course.js" defer></script>
-    </head>
-    <body>
-        <header>
-        <span id="Student Project" title="CSS 231 Week 1 Home Page">Student CSS231 Project</span>    
-        <nav>
-          <a href="index.html" target="_self" >Home</a>
-          <a href="chamber-project.html" target="_blank" > Chamber Project</a>
-          <a href="final-html" target="_blank" >Final Project</a>
-        <main>
-         <strong><h1>Home</h1></strong>
-         <section class="about section">
-            <h2> About Me</h2>
-            <p>My name is Emmanuel Adewemimo. I am a student at BYU-Pathway studying Software Engineering.<br> I am from Nigeria and I recently finished my high school education and on my way to get my first certificate. <br>I enjoy reading novels and listening to music.</p>
-         </section>
-         <section class="photo section">
-            <h2> Student Photo</h2>
-            <img src="images/My Profile Image.jpeg" alt="My Profile Image">
-         </section>
-         <section class="courses section">
+</head>
+<body>
+
+    <header>
+    
+     <img src="images/logo.svg" alt="WDD 231 Course Logo" class="logo" width="60" height="60">
+     <span>Emmanuel Adewemimo</span>
+     <button id="menu" aria-label="Toggle navigation menu">&#9776;</button>
+    </header>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="chamber/index.html">Chamber Project</a>
+        <a href="final-project.html">Final Project</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        
+        <section class="about-section">
+            <h2>About Me</h2>
+            <p>My name is Emmanuel Adewemimo. I am a student at BYU-Pathway studying Software Engineering. I am from Nigeria and I recently finished my high school education and am on my way to getting my first certificate. I enjoy reading novels and listening to music.</p>
+        </section>
+        
+        <section class="photo-section">
+            <h2>Student Photo</h2>
+            <img src="images/my-profile-images.jpeg" alt="Emmanuel Adewemimo Profile Image">
+        </section>
+        
+        <section class="courses-section">
             <h2>Web Certificate Courses</h2>
             <div class="filter-buttons">
-            <button class="btn active">All</button>
-            <button class="btn">CSE</button>
-            <button class="btn">WDD</button>
+                <button id="all-btn" class="btn active">All</button>
+                <button id="cse-btn" class="btn">CSE</button>
+                <button id="wdd-btn" class="btn">WDD</button>
             </div>
-            <div class="course-grid">
-            <div class="course-card">WDD 130</div>
-           <div class="course-card">WDD 131</div>
-           <div class="course-card">WDD 231</div>
-           </div>
-</section>
-         </section>
-        <footer>
-            <a href="https://www.linkedin.com/emmanuel-adewemimo" target="_blank"
-            ><img src="images/linkedin-icon.png" alt="LinkedIn">LinkedIn</a>
-            <a href="https://github.com/Emmyx8861" target="_blank"
-            ><img src="images/github-icon.png" alt="GitHub">GitHub</a>
-            <a href="https://x.com" target="_blank"
-            ><img src="images/twitter-icon.png" alt="Twitter">Twitter</a>
-            <span id="current-year"></span>
-            <p>&copy;<span id="current-year"></span> &#x1F338; Emmanuel Adewemimo. &#x1F338; Lagos.</p>
-       </footer>
-        </main>
-        </nav>
-        </header>
-    </body>
+            <div class="course-grid"></div>
+            <p id="total-credits"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/emmanuel-adewemimo" target="_blank" rel="noopener"><img src="images/linkedin-icon.png" alt="LinkedIn Profile"></a>
+            <a href="https://github.com/Emmyx8861" target="_blank" rel="noopener"><img src="images/github-icon.png" alt="GitHub Repository"></a>
+            <a href="https://x.com" target="_blank" rel="noopener"><img src="images/twitter-icon.png" alt="Twitter Profile"></a>
+        </div>
+        <p>&copy;<span id="current-year"></span> &#x1F338; Emmanuel Adewemimo &#x1F338; Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
 </html>
