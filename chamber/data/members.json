@@ -15,7 +15,7 @@
     "image": "1844solutions.png",
     "email": "contact@1844solutions.com",
     "phone": "+234 803 123 4567",
-    "address": "5, Ogunleye Street, Abeokuta",
+    "address": "5, Ogunleye Street Obatoko, Abeokuta, Ogun State",
     "url": "https://1844solutions.com",
     "level": 1
   },
@@ -25,7 +25,7 @@
     "image": "21ctl.png",
     "email": "info@21ctl.com",
     "phone": "+234 1 270 2100",
-    "address": "5 Jeremiah Ugwu Street, Lekki Phase 1, Lagos",
+    "address": "5 Jeremiah Ugwu Street, Off Babatunde Anjous, Lekki Phase 1, Lagos",
     "url": "https://21ctl.com",
     "level": 3
   },
@@ -45,12 +45,12 @@
     "image": "3tech.png",
     "email": "sales@3techcorp.com",
     "phone": "+234 1 460 3980",
-    "address": "Block 53, Plot 10, Lekki Phase 1, Lagos",
+    "address": "Block 53, Plot 10, Abike Animashaun Street, Lekki Phase 1, Lagos",
     "url": "https://3techcorp.com",
     "level": 2
   },
   {
-    "name": "4TEES RENTALS & BALLOONS",
+    "name": "4TEES RENTALS & BALLOONS NIGERIA LIMITED",
     "tagline": "Events Management & Party Rentals",
     "image": "4tees.png",
     "email": "info@4teesrentals.com",
@@ -58,15 +58,5 @@
     "address": "23A Glover Road, Ikoyi, Lagos",
     "url": "https://4teesrentals.com",
     "level": 1
-  },
-  {
-    "name": "LAGOS TECH HUB",
-    "tagline": "Co-working & Incubation",
-    "image": "lagostech.png",
-    "email": "hello@lagostechhub.com",
-    "phone": "+234 901 222 3333",
-    "address": "Yaba, Lagos, Nigeria",
-    "url": "https://lagostechhub.com",
-    "level": 3
   }
 ]
