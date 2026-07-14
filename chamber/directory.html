@@ -11,125 +11,51 @@
     <meta property="og:description" content="Directory containing Information regarding business owners">
     <meta property="og:image" content="images/logo.svg">
     <meta property="og:url" content="https://emmyx8861.github.io/wdd231/chamber/directory.html">
+    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="min-width: 768px">
 </head>
 <body>
     <header>
-       <strong><h1>Directory - Lagos Chamber of Commerce</h1></strong>
+        <h1>Directory - Lagos Chamber of Commerce</h1>
     </header>
-    <main>
-  <div class="menu">
-    <button id="gridBtn">Grid</button>
-    <button id="listBtn">List</button>
-  </div>
-
-  <div id="directory-container" class="grid-view">
     
-    <section class="card">
-      <h3>11 PLC</h3>
-      <p class="tagline">Fuels & Lubricants</p>
-      <div class="card-logo">
-        <img src="https://placehold.co/200x100/1e3a8a/ffffff?text=11+PLC" alt="11 PLC Logo" class="logo">
-      </div>
-      <div class="info">
-        <p><strong>EMAIL:</strong> info@11plc.com</p>
-        <p><strong>PHONE:</strong> +234 1 270 1234</p>
-        <p><strong>ADDRESS:</strong> 1 Mobil Road Apapa, Lagos</p>
-        <p><strong>URL:</strong> <a href="https://11plc.com" target="_blank">11plc.com</a></p>
-      </div>
-    </section>
+    <main>
+        <div class="menu">
+            <button id="gridBtn" class="active">Grid</button>
+            <button id="listBtn">List</button>
+        </div>
 
-    <section class="card">
-      <h3>1844 SOLUTIONS LIMITED</h3>
-      <p class="tagline">Logistics & Supply Solutions</p>
-      <div class="card-logo">
-        <img src="https://placehold.co/200x100/0f766e/ffffff?text=1844+Solutions" alt="1844 Solutions Logo" class="logo">
-      </div>
-      <div class="info">
-        <p><strong>EMAIL:</strong> contact@1844solutions.com</p>
-        <p><strong>PHONE:</strong> +234 803 123 4567</p>
-        <p><strong>ADDRESS:</strong> 5, Ogunleye Street Obatoko, Abeokuta, Ogun State</p>
-        <p><strong>URL:</strong> <a href="#" target="_blank">1844solutions.com</a></p>
-      </div>
-    </section>
+        <div id="directory-container" class="grid"></div>
+    </main>
 
-    <section class="card">
-      <h3>21ST CENTURY TECHNOLOGIES LTD</h3>
-      <p class="tagline">Digital Infrastructure & Fiber</p>
-      <div class="card-logo">
-        <img src="https://placehold.co/200x100/312e81/ffffff?text=21st+Century" alt="21st Century Technologies Logo" class="logo">
-      </div>
-      <div class="info">
-        <p><strong>EMAIL:</strong> info@21ctl.com</p>
-        <p><strong>PHONE:</strong> +234 1 270 2100</p>
-        <p><strong>ADDRESS:</strong> 5 Jeremiah Ugwu Street, Off Babatunde Anjous, Lekki Phase 1, Lagos</p>
-        <p><strong>URL:</strong> <a href="https://21ctl.com" target="_blank">21ctl.com</a></p>
-      </div>
-    </section>
-
-    <section class="card">
-      <h3>3T IMPEX CONSULTING LIMITED</h3>
-      <p class="tagline">Trade Finance & Export Academy</p>
-      <div class="card-logo">
-        <img src="https://placehold.co/200x100/7c2d12/ffffff?text=3T+Impex"alt="3T Impex Logo" class="logo">
-      </div>
-      <div class="info">
-        <p><strong>EMAIL:</strong> info@3timpex.com</p>
-        <p><strong>PHONE:</strong> +234 809 123 5555</p>
-        <p><strong>ADDRESS:</strong> 10, Olukole Street, Surulere, Lagos</p>
-        <p><strong>URL:</strong> <a href="https://3timpex.com" target="_blank">3timpex.com</a></p>
-      </div>
-    </section>
-
-    <section class="card">
-      <h3>3TECH CORPORATE NIGERIA LTD</h3>
-      <p class="tagline">Power Systems & Telecommunications</p>
-      <div class="card-logo">
-        <img src="https://placehold.co/200x100/111827/ffffff?text=3Tech+Corp" alt="3Tech Logo" class="logo">
-      </div>
-      <div class="info">
-        <p><strong>EMAIL:</strong> sales@3techcorp.com</p>
-        <p><strong>PHONE:</strong> +234 1 460 3980</p>
-        <p><strong>ADDRESS:</strong> Block 53, Plot 10, Abike Animashaun Street, Lekki Phase 1, Lagos</p>
-        <p><strong>URL:</strong> <a href="#" target="_blank">3techcorp.com</a></p>
-      </div>
-    </section>
-
-    <section class="card">
-      <h3>4TEES RENTALS & BALLOONS NIGERIA LIMITED</h3>
-      <p class="tagline">Events Management & Party Rentals</p>
-      <div class="card-logo">
-        <img src="https://placehold.co/200x100/6b21a8/ffffff?text=4Tees+Rentals" alt="4Tees Rentals Logo" class="logo">
-      </div>
-      <div class="info">
-        <p><strong>EMAIL:</strong> info@4teesrentals.com</p>
-        <p><strong>PHONE:</strong> +234 802 313 1250</p>
-        <p><strong>ADDRESS:</strong> 23A Glover Road, Ikoyi, Lagos</p>
-        <p><strong>URL:</strong> <a href="#" target="_blank">4teesrentals.com</a></p>
-      </div>
-    </section>
-
-  </div>
-</main>
     <footer>
-        <div class="Contact Details">
+        <div class="contact-details">
             <h3>Lagos Chamber Of Commerce</h3>
-            <p>10 Dr Nurudeen Olowopopo Way<hr>
-                Ikeja, Lagos<hr>
-                lcci@lagoschamber.com<hr>
-                0904 001 9094<hr>
+            <p>
+                10 Dr Nurudeen Olowopopo Way<br>
+                Ikeja, Lagos<br>
+                lcci@lagoschamber.com<br>
+                0904 001 9094
             </p>
         </div>
 
-        <div class="Social Links">
-            <div class="social-links">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener"><img src="images/linkedin-icon.png" alt="LinkedIn Profile"></a>
-            <a href="https://x.com" target="_blank" rel="noopener"><img src="images/twitter-icon.png" alt="Twitter Profile"></a>
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                <img src="images/linkedin-icon.png" alt="LinkedIn Profile">
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener">
+                <img src="images/twitter-icon.png" alt="Twitter Profile">
+            </a>
         </div>
-        <div class="Footer Details">
-           <p>WDD231 Class Project</p>
-           <p>Emmanuel Adewemimo</p>
-           <p>&copy; 2026 Lagos Chamber Of Commerce <hr><span id="current-year"></span></p>
-        <p id="lastModified"></p>
+
+        <div class="footer-details">
+            <p>WDD231 Class Project</p>
+            <p>Emmanuel Adewemimo</p>
+            <p>&copy; <span id="current-year"></span> Lagos Chamber Of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
         </div>
     </footer>
 </body>
+</html>
