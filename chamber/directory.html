@@ -9,26 +9,27 @@
     <link rel="icon" href="images/favicon.ico">
     <meta property="og:title" content="Directory - Lagos Chamber of Commerce">
     <meta property="og:description" content="Directory containing Information regarding business owners">
-    <meta property="og:image" content="images/logo.svg">
+    <meta property="og:image" content="https://emmyx8861.github.io/wdd231/chamber/images/logo.svg">
     <meta property="og:url" content="https://emmyx8861.github.io/wdd231/chamber/directory.html">
-    <script src="scripts/directory.js" defer></script>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+     <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css"
 </head>
 <body>
     <header>
-        <h1>Directory - Lagos Chamber of Commerce</h1>
+        <p class="header-title">Lagos Chamber of Commerce</p>
     </header>
     
     <main>
+        <h1>Directory</h1>
+
         <div class="menu">
             <button id="gridBtn" class="active">Grid</button>
             <button id="listBtn">List</button>
-            <h1>Directory</h1>
         </div>
 
         <div id="directory-container" class="grid"></div>
@@ -36,7 +37,7 @@
 
     <footer>
         <div class="contact-details">
-            <h3>Lagos Chamber Of Commerce</h3>
+            <h2>Lagos Chamber Of Commerce</h2>
             <p>
                 10 Dr Nurudeen Olowopopo Way<br>
                 Ikeja, Lagos<br>
