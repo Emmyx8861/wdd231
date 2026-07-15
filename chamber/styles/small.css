@@ -17,9 +17,10 @@ header {
     text-align: center;
 }
 
-header h1 {
+.header-title {
     margin: 0;
     font-size: 1.8rem;
+    font-weight: bold;
 }
 
 main {
@@ -184,11 +185,13 @@ footer {
     margin-top: 3rem;
 }
 
-footer h3 {
+footer h2 {
     color: white;
     margin-top: 0;
     margin-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
+
 
 footer p {
     font-size: 0.85rem;
