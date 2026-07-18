@@ -37,6 +37,7 @@ function displayMembers(members) {
             <div class="card-body">
                 <div class="card-logo">
                     <img src="images/${member.image}" alt="${member.name} logo" class="logo" 
+                         width="100" height="100" loading="lazy"
                          onerror="this.onerror=null; this.src='https://placehold.co/100x100/1e3a8a/ffffff?text=Logo';">
                 </div>
                 <div class="info">
