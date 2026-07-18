@@ -1,4 +1,26 @@
 @media (min-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .primary-nav {
+        display: block;
+        width: auto;
+    }
+
+    .primary-nav ul {
+        flex-direction: row;
+        gap: 0.5rem;
+        margin: 0;
+    }
+
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }

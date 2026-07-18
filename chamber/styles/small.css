@@ -11,6 +11,7 @@ body {
 }
 
 header {
+    position: relative;
     background-color: #1e3a8a;
     color: white;
     padding: 1.5rem;
@@ -21,6 +22,63 @@ header {
     margin: 0;
     font-size: 1.8rem;
     font-weight: bold;
+}
+
+/* Hamburger toggle button (mobile) */
+.nav-toggle {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 36px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.nav-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Primary navigation (mobile-first: hidden dropdown) */
+.primary-nav {
+    display: none;
+    width: 100%;
+}
+
+.primary-nav.open {
+    display: block;
+}
+
+.primary-nav ul {
+    list-style: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.primary-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.6rem;
+    border-radius: 4px;
+}
+
+.primary-nav a:hover,
+.primary-nav a.current {
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 main {
@@ -164,6 +222,11 @@ main h1 {
 
 .list .card .tagline, .list .card-logo {
     display: none; 
+}
+
+.list .card-body {
+    grid-template-columns: 1fr;
+    padding: 0.5rem 0 0 0;
 }
 
 .list .info {

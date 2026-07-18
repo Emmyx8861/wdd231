@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -22,8 +22,20 @@
 <body>
     <header>
         <p class="header-title">Lagos Chamber of Commerce</p>
+        <button id="navToggle" class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="primaryNav" class="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" aria-current="page" class="current">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
     </header>
-    
+
     <main>
         <h1>Directory</h1>
 

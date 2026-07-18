@@ -2,6 +2,13 @@ const url = 'data/members.json';
 const container = document.querySelector('#directory-container');
 const gridButton = document.querySelector('#gridBtn');
 const listButton = document.querySelector('#listBtn');
+const navToggle = document.querySelector('#navToggle');
+const primaryNav = document.querySelector('#primaryNav');
+
+navToggle.addEventListener('click', () => {
+    const isOpen = primaryNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+});
 
 async function getMembers() {
     try {

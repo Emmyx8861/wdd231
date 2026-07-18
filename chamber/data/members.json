@@ -58,5 +58,15 @@
     "address": "23A Glover Road, Ikoyi, Lagos",
     "url": "https://4teesrentals.com",
     "level": 1
+  },
+  {
+    "name": "GREENFIELD AGRO EXPORTS LIMITED",
+    "tagline": "Agricultural Produce & Export",
+    "image": "greenfieldagro.png",
+    "email": "info@greenfieldagro.com",
+    "phone": "+234 805 214 7788",
+    "address": "17 Marina Road, Lagos Island, Lagos",
+    "url": "https://greenfieldagro.com",
+    "level": 3
   }
 ]
