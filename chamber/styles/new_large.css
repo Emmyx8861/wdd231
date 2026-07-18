@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            "hero hero"
+            "events weather"
+            "spotlights spotlights";
+    }
+
+    .hero { grid-area: hero; }
+    .events { grid-area: events; }
+    .weather { grid-area: weather; }
+    .spotlights { grid-area: spotlights; }
+
+    #spotlight-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
