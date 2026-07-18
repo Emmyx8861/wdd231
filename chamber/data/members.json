@@ -7,8 +7,8 @@
     "phone": "+234 1 270 1234",
     "address": "1 Mobil Road Apapa, Lagos",
     "url": "https://11plc.com",
-    "level": 3
-  },
+    "level": "Gold"
+    },
   {
     "name": "1844 SOLUTIONS LIMITED",
     "tagline": "Logistics & Supply Solutions",
@@ -17,7 +17,7 @@
     "phone": "+234 803 123 4567",
     "address": "5, Ogunleye Street Obatoko, Abeokuta, Ogun State",
     "url": "https://1844solutions.com",
-    "level": 1
+    "level": "Bronze"
   },
   {
     "name": "21ST CENTURY TECHNOLOGIES LTD",
@@ -27,7 +27,7 @@
     "phone": "+234 1 270 2100",
     "address": "5 Jeremiah Ugwu Street, Off Babatunde Anjous, Lekki Phase 1, Lagos",
     "url": "https://21ctl.com",
-    "level": 3
+    "level": "Gold"
   },
   {
     "name": "3T IMPEX CONSULTING LIMITED",
@@ -37,7 +37,7 @@
     "phone": "+234 809 123 5555",
     "address": "10, Olukole Street, Surulere, Lagos",
     "url": "https://3timpex.com",
-    "level": 2
+    "level": "Silver"
   },
   {
     "name": "3TECH CORPORATE NIGERIA LTD",
@@ -47,7 +47,7 @@
     "phone": "+234 1 460 3980",
     "address": "Block 53, Plot 10, Abike Animashaun Street, Lekki Phase 1, Lagos",
     "url": "https://3techcorp.com",
-    "level": 2
+    "level": "Silver"
   },
   {
     "name": "4TEES RENTALS & BALLOONS NIGERIA LIMITED",
@@ -57,7 +57,7 @@
     "phone": "+234 802 313 1250",
     "address": "23A Glover Road, Ikoyi, Lagos",
     "url": "https://4teesrentals.com",
-    "level": 1
+    "level": "Bronze"
   },
   {
     "name": "GREENFIELD AGRO EXPORTS LIMITED",
@@ -67,6 +67,6 @@
     "phone": "+234 805 214 7788",
     "address": "17 Marina Road, Lagos Island, Lagos",
     "url": "https://greenfieldagro.com",
-    "level": 3
+    "level": "Gold"
   }
 ]

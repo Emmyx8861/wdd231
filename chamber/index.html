@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Lagos Chamber of Commerce</title>
+    <meta name="description" content="Lagos Chamber of Commerce. Empowering startups, enterprises, and local businesses in Lagos, Nigeria.">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <p class="header-title">Lagos Chamber of Commerce</p>
+    </header>
+    
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="home-grid">
+        <section class="hero">
+            <picture>
+                <img src="images/lagos-hero.jpg" alt="Lagos City Skyline" width="800" height="400" loading="lazy">
+            </picture>
+            <div class="hero-content">
+                <h2>Empowering Lagos Startups & Enterprises</h2>
+                <a href="join.html" class="cta-button">Join the Chamber Today</a>
+            </div>
+        </section>
+        
+        <section class="events card">
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li><strong>Aug 12:</strong> Tech Startup Pitch Night</li>
+                <li><strong>Aug 25:</strong> Networking Mixer - Victoria Island</li>
+                <li><strong>Sep 05:</strong> Q3 Economic Forecast Luncheon</li>
+            </ul>
+        </section>
+        
+        <section class="weather card">
+            <h3>Lagos Weather</h3>
+            <div id="current-weather">
+            </div>
+            <hr>
+            <h4>3-Day Forecast</h4>
+            <div id="weather-forecast">
+            </div>
+        </section>
+        
+        <section class="spotlights card">
+            <h3>Member Spotlights</h3>
+            <div id="spotlight-container">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Lagos Chamber of Commerce</p>
+        <div class="social-links">
+            <a href="#" target="_blank" rel="noopener">
+                <img src="images/linkedin-icon.png" alt="LinkedIn" width="24" height="24" loading="lazy">
+            </a>
+            <a href="#" target="_blank" rel="noopener">
+                <img src="images/twitter-icon.png" alt="Twitter" width="24" height="24" loading="lazy">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
