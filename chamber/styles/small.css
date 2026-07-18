@@ -24,7 +24,6 @@ header {
     font-weight: bold;
 }
 
-/* Hamburger toggle button (mobile) */
 .nav-toggle {
     position: absolute;
     top: 1.25rem;
@@ -48,7 +47,6 @@ header {
     border-radius: 2px;
 }
 
-/* Primary navigation (mobile-first: hidden dropdown) */
 .primary-nav {
     display: none;
     width: 100%;
