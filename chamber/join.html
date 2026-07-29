@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adewemimo Emmanuel">
+    <meta name="description" content="Chamber of Commerce membership application form for WDD 231.">
+    <title>Adewemimo Emmanuel - WDD 231 - Chamber Join Page</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Directory - Lagos Chamber of Commerce">
+    <meta property="og:description" content="Directory containing Information regarding business owners">
+    <meta property="og:image" content="https://emmyx8861.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://emmyx8861.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/join.js" defer></script> 
+</head>
+<body>
+    <header>
+     <p class="header-title">Lagos Chamber of Commerce</p>
+        <button id="navToggle" class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <nav id="primaryNav" class="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" aria-current="page" class="current">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+       <div class="join-layout">
+    <section class="form-container">
+        <h2>Chamber Membership Application</h2>
+        <form method="GET" action="thankyou.html" class="join-form">
+            
+            <label>First Name *
+                <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name" required>
+            </label>
+
+            <label>Last Name *
+                <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name" required>
+            </label>
+
+            <label>Organizational Title
+                <input type="text" name="org_title" title="Letters, spaces, and hyphens only (Min. 7 characters)" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+            </label>
+
+            <label>Email Address *
+                <input type="email" name="email" title="Enter a valid email address" autocomplete="email" placeholder="example@email.com" required>
+            </label>
+
+            <label>Mobile Phone *
+                <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+            </label>
+
+            <label>Business/Organization Name *
+                <input type="text" name="business_name" title="Enter your organization's name" autocomplete="organization" required>
+            </label>
+
+            <fieldset class="membership-fieldset">
+                <legend>Membership Level Selection *</legend>
+                <label class="radio-label">
+                    <input type="radio" name="membership_level" value="np" required> NP Membership (Non-Profit - Free)
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="membership_level" value="bronze"> Bronze Membership
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="membership_level" value="silver"> Silver Membership
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="membership_level" value="gold"> Gold Membership
+                </label>
+            </fieldset>
+
+            <label>Business/Organization Description
+                <textarea name="description" title="Provide a brief description of your business or organization" rows="4"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </section>
+
+    <section class="membership-cards">
+        <div class="level-card np">
+            <h3>NP Membership</h3>
+            <button class="open-modal" data-target="modal-np">View Benefits</button>
+        </div>
+        <div class="level-card bronze">
+            <h3>Bronze Membership</h3>
+            <button class="open-modal" data-target="modal-bronze">View Benefits</button>
+        </div>
+        <div class="level-card silver">
+            <h3>Silver Membership</h3>
+            <button class="open-modal" data-target="modal-silver">View Benefits</button>
+        </div>
+        <div class="level-card gold">
+            <h3>Gold Membership</h3>
+            <button class="open-modal" data-target="modal-gold">View Benefits</button>
+        </div>
+    </section>
+</div>
+
+<dialog id="modal-np">
+    <h2>Non-Profit Membership</h2>
+    <p><strong>Cost:</strong> Free</p>
+    <p><strong>Benefits:</strong> Basic directory listing and access to networking events designed for non-profit organizations.</p>
+    <button class="close-modal">Close</button>
+</dialog>
+
+<dialog id="modal-bronze">
+    <h2>Bronze Membership</h2>
+    <p><strong>Cost:</strong> $200 / Year</p>
+    <p><strong>Benefits:</strong> Standard directory listing, monthly newsletter inclusion, and 10% off event tickets.</p>
+    <button class="close-modal">Close</button>
+</dialog>
+
+<dialog id="modal-silver">
+    <h2>Silver Membership</h2>
+    <p><strong>Cost:</strong> $500 / Year</p>
+    <p><strong>Benefits:</strong> Premium directory placement, quarterly homepage spotlights, and two free event passes.</p>
+    <button class="close-modal">Close</button>
+</dialog>
+
+<dialog id="modal-gold">
+    <h2>Gold Membership</h2>
+    <p><strong>Cost:</strong> $1,000 / Year</p>
+    <p><strong>Benefits:</strong> Guaranteed homepage spotlight, VIP event access, free training workshops, and comprehensive advertising.</p>
+    <button class="close-modal">Close</button>
+</dialog>
+    </main>
+
+    <footer>
+        <div class="contact-details">
+            <h2>Lagos Chamber Of Commerce</h2>
+            <p>
+                10 Dr Nurudeen Olowopopo Way<br>
+                Ikeja, Lagos<br>
+                lcci@lagoschamber.com<br>
+                0904 001 9094
+            </p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                <img src="images/linkedin-icon.png" alt="LinkedIn Profile" width="24" height="24" loading="lazy">
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener">
+                <img src="images/twitter-icon.png" alt="Twitter Profile" width="24" height="24" loading="lazy">
+            </a>
+        </div>
+        
+        <div class="footer-details">
+            <p>WDD231 Class Project</p>
+            <p>Emmanuel Adewemimo</p>
+            <p>&copy; <span id="current-year"></span> Lagos Chamber Of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    </footer>
+
+</body>
+</html>

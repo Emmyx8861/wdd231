@@ -25,6 +25,12 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    @media (min-width: 768px) {
+    .join-layout {
+        grid-template-columns: 2fr 1fr; 
+    }
+}
+
     footer {
         display: grid;
         grid-template-columns: 1fr auto 1fr;
