@@ -155,7 +155,36 @@ h1 {
     font-weight: bold;
     font-size: 0.9rem;
 }
+nav {
+    background-color: #0f172a; /* Matches your dark nav bar */
+}
 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover, 
+nav a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #38bdf8;
+}
 .join-layout {
     display: grid;
     grid-template-columns: 1fr;
