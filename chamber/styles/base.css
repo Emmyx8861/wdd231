@@ -38,26 +38,34 @@ nav {
     padding: 0.5rem;
 }
 
+nav ul,
 .nav-menu {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
 
+nav a,
 .nav-menu a {
+    display: block;
     color: #9ca3af;
     text-decoration: none;
+    padding: 0.5rem 1rem;
     font-size: 1.1rem;
     font-weight: 500;
-    padding: 0.5rem 0.75rem;
-    transition: color 0.3s ease;
+    border-radius: 4px;
+    transition: color 0.3s ease, background-color 0.2s ease;
 }
 
+nav a:hover, 
+nav a:focus,
 .nav-menu a:hover, 
 .nav-menu a.active {
+    background-color: rgba(255, 255, 255, 0.1);
     color: var(--white);
 }
 
@@ -155,36 +163,7 @@ h1 {
     font-weight: bold;
     font-size: 0.9rem;
 }
-nav {
-    background-color: #0f172a; /* Matches your dark nav bar */
-}
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0 0 1rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-nav a {
-    display: block;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0.5rem 1.5rem;
-    font-size: 1.1rem;
-    font-weight: 500;
-    border-radius: 4px;
-    transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-nav a:hover, 
-nav a:focus {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #38bdf8;
-}
 .join-layout {
     display: grid;
     grid-template-columns: 1fr;
@@ -235,8 +214,8 @@ nav a:focus {
 }
 
 .submit-btn {
-    background-color: var(--primary, #1e3a8a);
-    color: white;
+    background-color: var(--primary);
+    color: var(--white);
     padding: 1rem 2rem;
     border: none;
     border-radius: 5px;
@@ -246,7 +225,7 @@ nav a:focus {
 }
 
 .submit-btn:hover {
-    background-color: var(--secondary, #111827);
+    background-color: var(--secondary);
 }
 
 .membership-cards {
@@ -280,8 +259,8 @@ nav a:focus {
 
 .open-modal {
     background-color: transparent;
-    border: 2px solid var(--primary, #1e3a8a);
-    color: var(--primary, #1e3a8a);
+    border: 2px solid var(--primary);
+    color: var(--primary);
     padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
@@ -339,4 +318,26 @@ footer {
     padding: 2rem 1rem;
     text-align: center;
     margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    nav ul,
+    .nav-menu {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .join-layout {
+        grid-template-columns: 3fr 2fr;
+    }
 }
