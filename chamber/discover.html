@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discover the Lagos Chamber of Commerce area with attractions, demographics, and visitor information.">
+    <meta name="author" content="Adewemimo Emmanuel">
+    <title>Discover - Lagos Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Discover - Lagos Chamber of Commerce">
+    <meta property="og:description" content="Discover the Lagos Chamber of Commerce area with facts, attractions, and local highlights.">
+    <meta property="og:image" content="https://emmyx8861.github.io/wdd231/chamber/images/lagos-hero.jpg">
+    <meta property="og:url" content="https://emmyx8861.github.io/wdd231/chamber/discover.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/discover.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <p class="header-title">Lagos Chamber of Commerce</p>
+        <button id="navToggle" class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="primaryNav" class="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" aria-current="page" class="current">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="discover-hero">
+            <figure>
+                <img src="images/lagos-hero.jpg" alt="Lagos city skyline" width="1200" height="600" loading="lazy">
+            </figure>
+            <div class="hero-overlay">
+                <h1>Discover the Chamber Region</h1>
+                <p>From Lagos' creative districts to waterfront developments and cultural landmarks, this area offers a strong economy, growing membership opportunities, and a welcoming climate for visitors.</p>
+            </div>
+        </section>
+
+        <section class="discover-intro">
+            <h2>Why join our local community?</h2>
+            <p>Greater Lagos is one of Africa's busiest business corridors, home to more than 20 million residents, major ports, and a thriving creative sector. Our chamber area supports entrepreneurs, boosts networking, and highlights the local commerce that keeps the region moving.</p>
+            <div class="area-facts">
+                <div><strong>Population:</strong> 20+ million residents</div>
+                <div><strong>Economy:</strong> West Africa's largest commercial hub</div>
+                <div><strong>Access:</strong> International airport, seaport, and major roadways</div>
+            </div>
+        </section>
+
+        <section id="visitMessage" class="visit-notice"></section>
+
+        <section class="gallery-section">
+            <h2>Eight local highlights</h2>
+            <div id="galleryGrid" class="gallery-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-details">
+            <h2>Lagos Chamber Of Commerce</h2>
+            <p>
+                10 Dr Nurudeen Olowopopo Way<br>
+                Ikeja, Lagos<br>
+                lcci@lagoschamber.com<br>
+                0904 001 9094
+            </p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                <img src="images/linkedin-icon.png" alt="LinkedIn Profile" width="24" height="24" loading="lazy">
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener">
+                <img src="images/twitter-icon.png" alt="Twitter Profile" width="24" height="24" loading="lazy">
+            </a>
+        </div>
+        
+        <div class="footer-details">
+            <p>WDD231 Class Project</p>
+            <p>Emmanuel Adewemimo</p>
+            <p>&copy; <span id="current-year"></span> Lagos Chamber Of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
