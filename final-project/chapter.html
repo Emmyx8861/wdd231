@@ -14,7 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="author-portfolio.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/author-portfolio.css">
 </head>
 <body>
   <header class="site-header">
@@ -32,34 +33,9 @@
 
   <main class="container">
     <article class="card">
-      <h2>The Silver Lining Of Xavier Reeds: Prologue</h2>
-      <p class="muted">Est. read time: 5 minutes (excerpt)</p>
-      <section class="sample">
-        <p>The abyss is dead.
-          I killed it.
-          <br>I tore it apart, watched it collapse, felt it vanish into nothing.
-          <br>And yet…
-          <br>I can still hear it.
-          <br>It whispers in the dark, in the empty spaces between thoughts.
-          <br>In the silence of forgotten places.
-          <br>The abyss is dead.
-          <br>But something remains.
-          <br>And I am beginning to wonder—
-          <br>Did I destroy it?
-          <br>Or did I become it?
-          <br>When Isabella fell, the universe held its breath.
-          <br>The sky above the last world repaired itself.
-          <br>The ground beneath our feet solidified.
-          <br>The ruins of existence trembled—and then stilled.
-          <br>The abyss was gone.
-          <br>And yet, as I stood there, staring at the empty space where Isabella had once been—something felt wrong.
-          <br>I felt wrong.
-          <br>Because deep inside me, where the abyss had once burrowed—
-          <br>Something was still there.
-
-</p>
-        <p>— excerpt —</p>
-      </section>
+      <h2 id="chapter-title">Loading sample...</h2>
+      <p class="muted" id="chapter-meta"></p>
+      <section class="sample" id="chapter-content" aria-live="polite"></section>
     </article>
 
     <aside class="card contact">
@@ -92,5 +68,6 @@
       <p>&copy; 2026 Ink & Orbit</p>
     </div>
   </footer>
+  <script src="scripts/app.js" defer></script>
 </body>
 </html>

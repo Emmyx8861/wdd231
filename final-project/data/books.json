@@ -1,0 +1,52 @@
+{
+  "books": [
+    {
+      "id": "silver-lining",
+      "title": "The Silver Lining Of Xavier Reeds",
+      "genre": "Speculative Fiction",
+      "description": "A look into a world crumbling down and the person who must decide what survives.",
+      "chapters": [
+        {
+          "id": "prologue",
+          "title": "Prologue: The Abyss Remembers",
+          "summary": "Xavier confronts the silence left behind after the abyss disappears.",
+          "readTime": 5,
+          "sample": [
+            "The abyss is dead. I killed it.",
+            "I tore it apart, watched it collapse, felt it vanish into nothing. And yet, I can still hear it.",
+            "It whispers in the dark, in the empty spaces between thoughts. In the silence of forgotten places.",
+            "The abyss is dead. But something remains. And I am beginning to wonder: did I destroy it, or did I become it?"
+          ]
+        },
+        {
+          "id": "illusion",
+          "title": "Chapter 1: The Illusion of Reedsworth",
+          "summary": "A familiar city reveals the first signs that reality is changing.",
+          "readTime": 12,
+          "sample": [
+            "Reedsworth appeared peaceful from a distance, but Xavier knew better.",
+            "Every window reflected a different sky, and every street seemed to remember a different name."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maps-moons",
+      "title": "Between Maps & Moons",
+      "genre": "Literary Speculative Fiction",
+      "description": "Two travelers follow memory across seasons, continents, and the cartography of the heart.",
+      "chapters": [
+        {
+          "id": "first-light",
+          "title": "Chapter 1: First Light",
+          "summary": "Two travelers meet at a station where every departure feels like a beginning.",
+          "readTime": 18,
+          "sample": [
+            "She traced the route on the old map with the tip of her finger as if the creases might remember the way.",
+            "The station smelled of coffee and late departures; a poster for a forgotten play peeled at the corner."
+          ]
+        }
+      ]
+    }
+  ]
+}
